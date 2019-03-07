@@ -1,0 +1,97 @@
+<html lang="en">
+
+    <head>
+    <title>happy save</title>
+	<script src="js/jquery.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--
+    <div class="logo">
+    <h1><center>happy save</center></h1>
+    </div>
+    </head>
+    -->
+    
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">	
+					<span class="bar1"></span>
+					<span class="bar2"></span>
+					<span class="bar3"></span>
+			  </div>
+				<a class="navbar-brand top" href="#">
+					<!--<img src="img/logo.png" alt="">-->
+				</a>
+<ul class="back-button">
+        <ul class="nav navbar-nav navbar-left">
+                <a href="home_test.html"><img src="img/back.png" style="width:6%"></a>
+               </ul>
+                </ul>
+			</div>
+
+			<div class="collapse navbar-collapse" id="main-menu">
+			   <ul class="nav navbar-nav navbar-right">
+				<li><a href="home_test.html">Home</a></li>
+				<li><a href="help_test.html">Help</a></li>
+				<li><a href="setting_test.html">Settings</a></li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+        
+        <body>
+            <center><h1>Help</h1></center>
+            <center><p> FAQ</p></center>
+            
+            <button class="accordion">Who are we?</button>
+                <div class="panel">
+                    <p> We are a small group of students that aspire to help your average college student help manage their finances whilst also reducing the amount of food they might waste as a result of poor 
+                     spending habits.</p>
+                </div>
+            
+            <button class="accordion">What is happy save?</button>
+                <div class="panel">
+                    <p>happy save is a budget/food oriented app that is developed to promote better money management whilst also promoting a decrease in food waste. </p>
+                </div> 
+            
+        <button class="accordion">I found a problem where do I report it?</button>
+                <div class="panel">
+                    <p>If your find that there are ever any issues send them to:
+                    happy-save@gmail.com </p>
+                </div> 
+            
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+            </script>
+            
+        </body>
+        
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.js"></script>
+	    <script src="js/modernizr.js"></script>
+    </body>
+</html>
